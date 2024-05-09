@@ -10,6 +10,9 @@ __pycache__/
 venv/
 env/
 
+
+*.env
+
 # IDE or editor-specific files
 .vscode/
 .idea/
