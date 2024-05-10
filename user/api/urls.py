@@ -9,8 +9,8 @@ urlpatterns = [
     path('register/', CreateUserView.as_view(), name="register"),
 
     # Authentication URLs
-    path('auth/login/', TokenObtainPairView.as_view(), name='login'),
-    path('auth/refresh/token/', TokenRefreshView.as_view(), name='refresh_token'),
+    path('login/', TokenObtainPairView.as_view(), name='login'),
+    path('refresh/token/', TokenRefreshView.as_view(), name='refresh_token'),
     path('lifetime/token/', provide_token, name='refresh_token'),
 
 
