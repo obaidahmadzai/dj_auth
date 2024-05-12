@@ -32,7 +32,7 @@ DEBUG = os.environ['DEBUG']
 ALLOWED_HOSTS = ['*']
 
 # # Auth User Model
-# AUTH_USER_MODEL = 'users.User'
+AUTH_USER_MODEL = 'user.User'
 
 # Application definition
 

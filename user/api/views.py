@@ -1,5 +1,4 @@
-
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
 # Create your views here.
 from rest_framework import generics
 from .serializers import UserSerializer
@@ -11,7 +10,7 @@ from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import RefreshToken
 from common.rest_framework.mixins import APIViewResponseMixin
 
-
+User = get_user_model()
 @api_view(['GET'])
 def provide_token(request):
     # Check if the user is authenticated
